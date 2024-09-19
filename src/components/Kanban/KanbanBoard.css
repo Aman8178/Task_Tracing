@@ -1,0 +1,78 @@
+.kanban-board {
+  padding: 20px;
+}
+
+.columns {
+  display: flex;
+  flex-wrap: nowrap; 
+  overflow-x: hidden; 
+}
+.column {
+  flex: 1;
+  min-width: 200px; 
+  margin-right: 10px;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  min-height: 500px; 
+  overflow: hidden; 
+}
+
+.ticket {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  min-height: 120px; 
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ticket-id {
+  font-size: 12px;
+  color: #666;
+  margin-right: auto; 
+}
+
+.ticket-priority {
+  padding: 3px 5px;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px; 
+}
+
+.ticket-content {
+  margin-top: 10px;
+  flex-grow: 1;
+}
+
+.ticket-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ticket-tag, .ticket-user {
+  font-size: 12px;
+  color: #666;
+}
+
+.ticket-user {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
